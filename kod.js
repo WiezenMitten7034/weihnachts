@@ -1,4 +1,4 @@
-// target current day, disable future days and days without dates
+
 
 var d = new Date();
 var todaysDate = d.getDate();
@@ -17,7 +17,7 @@ target.each(function(){
   }
 });
 
-// handle clicks on days
+
 
 $('.day').click(function(){
   if ($(this).hasClass('future')){
@@ -32,7 +32,7 @@ $('.day').click(function(){
   }
 })
 
-// close modal
+
 
 $('.close').click(function(){
   var ultimateParent = $(this).parent().parent().parent();
@@ -42,6 +42,6 @@ $('.close').click(function(){
   },250);
 })
 
-// snow effect customizations
+
 
 $(document).snowfall({flakeCount : 100,collection : '.collectonme',  maxSpeed : 10});
